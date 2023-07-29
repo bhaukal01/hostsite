@@ -1,0 +1,224 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #009688;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li:first-child {
+    margin-left: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009688;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #00796b;
+}
+
+/* Landing Page Styles */
+.landing {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('landing-bg.jpg'); /* Add your background image path here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Background fixed to cover the entire page */
+    height: 100vh; /* Full height of the viewport */
+    color: #fff;
+}
+
+.landing-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* Plans Page Styles */
+.plans {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan {
+    flex-basis: calc(33.333% - 20px); /* Display three plans per row with spacing between */
+    max-width: 300px;
+    margin: 10px; /* Create spacing between plan containers */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan li {
+    margin-bottom: 5px;
+}
+
+.price {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buy-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009688;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.buy-now-button:hover {
+    background-color: #00796b;
+}
+
+/* Responsive layout for plans */
+@media (max-width: 1000px) {
+    .plan {
+        flex-basis: calc(50% - 20px); /* On larger screens, display two plans per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .plan {
+        flex-basis: 100%; /* On smaller screens, display one plan per row */
+    }
+}
+
+/* Contact Us Page Styles */
+.contact {
+    text-align: center;
+    padding: 50px 0;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+/* About Us Page Styles */
+.about {
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #009688;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
